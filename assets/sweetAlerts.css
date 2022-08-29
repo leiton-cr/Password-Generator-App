@@ -1,0 +1,8 @@
+.colored-toast.swal2-icon-success {
+  background-color: var(--clr-accent) !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: var(--clr-error) !important;
+}
+

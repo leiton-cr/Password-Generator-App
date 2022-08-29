@@ -1,0 +1,31 @@
+[type="checkbox"]{
+    height: 0;
+    width: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+[type="checkbox"]::after{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    font-size: .8em;
+    content: "";
+    position: absolute;
+    top: -.8rem;
+    left: -.5rem;
+
+    border: 1px solid var(--clr-font-main);
+    text-align: center;
+}
+
+[type="checkbox"]:hover::after{
+    border: 1px solid var(--clr-accent);
+}
+
+[type="checkbox"]:checked:after{
+    content: "✔";
+    place-items: center;
+    border: 1px solid var(--clr-accent);
+    background-color: var(--clr-accent);
+}

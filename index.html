@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <script src="https://kit.fontawesome.com/a6ee538727.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+    <script src="./src/sliderStyle.js" defer></script>
+    <script src="./src/index.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <div class="app__container">
+        <h1 class="generator-title">Password Generator</h1>
+
+        <section class="result-container">
+            <p class="result-password">Must select an option</p>
+            <button class="copy-button btn">
+                <i class="fa-solid fa-copy --fa-inverse"></i>
+            </button>
+        </section>
+
+        <section class="main-form">
+            <form action="">
+
+                <fieldset>
+                    <p class="form-length">Character Length <span class="range__value">10</span></p>
+                    <input class="form-range" min="1" max="15" value="8" type="range" name="characters" id="characters">
+                </fieldset>
+
+                <fieldset class="form-checkboxes">
+
+                    <div class="input-container">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" id="lowercase">
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                </fieldset>
+
+                <section class="form-strength">
+                    <p class="form-strength__title">Strength</p>
+
+                    <div class="form-strength__level">
+                        <p class="strength-text">Zero</p>
+                        <i class="strength-level" data-active="false"></i>
+                        <i class="strength-level" data-active="false"></i>
+                        <i class="strength-level" data-active="false"></i>
+                        <i class="strength-level" data-active="false"></i>
+                    </div>
+
+                </section>
+
+                <button class="form-submit btn">Generate</button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
